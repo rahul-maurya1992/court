@@ -1,0 +1,24 @@
+<ion-menu [content]="content">
+  <ion-header class="menuheader">
+    <ion-toolbar color="brown" style="height:120px;">
+      <ion-title><img width="100px" src="assets/imgs/logo.png"></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list class="menulist_title">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon item-left><img src="{{p.icon}}"></ion-icon>
+        {{p.title}}
+      </button>
+      <button menuClose ion-item (click)="inappbrowser()">
+          <ion-icon item-left><img src="assets/imgs/member.png"></ion-icon>
+          Member registration
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

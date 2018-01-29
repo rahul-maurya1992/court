@@ -1,0 +1,8 @@
+{
+  "name": "court",
+  "app_id": "f5b98072",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,67 @@
+page-getstart {
+    .loginouter{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin-top: 10vh;
+    }
+    .loginouter{
+        padding: 5vh 0;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .loginouter h3 {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    .loginform .item{
+        background: none;
+        border: none !important;
+    }
+
+    .loginform input {
+        text-align: center;
+        color: #af7f4c !important;
+    }
+    .loginform .item-inner{
+        border-color: #af7f4c !important;
+        padding-right: 0 !important;
+    }
+    .loginform .label {
+        margin-right: 0 !important;
+    }
+    .contbtn{
+        height: 40px !important;
+        border-radius: 8px;
+        box-shadow: 0 3px 0 #1e110f;
+        color: #1e110f;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+    .text-input::-moz-placeholder {
+        color: #af7f4c !important;
+      }
+      
+      .text-input:-ms-input-placeholder {
+        color: #af7f4c !important;
+      }
+      
+      .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: #af7f4c !important;
+      }
+      .text-input::-moz-placeholder {
+        color: #af7f4c !important;
+      }
+      
+      .text-input:-ms-input-placeholder {
+        color: #af7f4c !important;
+      }
+      
+      .text-input::-webkit-input-placeholder {
+        text-indent: 0;
+        color: white;
+      }
+
+}

@@ -1,0 +1,23 @@
+page-judges {
+    .directorycard {
+        border-radius: 10px !important;
+    }
+    .directorycard .label {
+        white-space: normal;
+    }
+    .directorycard .item {
+        align-items: normal;
+        background: #f9f9f9;
+    }
+
+    .directorycard .card-title{
+        padding-bottom: 0;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .directorycard h2{
+        padding-bottom: 0;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}

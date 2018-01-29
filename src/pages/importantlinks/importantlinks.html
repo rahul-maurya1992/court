@@ -1,0 +1,32 @@
+<!--
+  Generated template for the IncumbencyfrontPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="brown">
+      <button ion-button menuToggle style="display:block;">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Important links</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content style="background:#f2f2f2;">
+    <ion-list>
+        <button ion-item (click)="inappbrowser('http://supremecourtofindia.nic.in')">
+          Supreme Court
+          </button>
+          <button ion-item (click)="inappbrowser('http://highcourtchd.gov.in')">
+            High Court
+          </button>
+          <button ion-item (click)="inappbrowser('http://www.ecourts.gov.in')">
+            eCourt
+            </button>
+            <button ion-item (click)="inappbrowser('http://hslsa.nic.in')">
+              HALSA
+              </button>
+          </ion-list>
+</ion-content>

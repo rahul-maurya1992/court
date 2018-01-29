@@ -1,0 +1,45 @@
+<!--
+  Generated template for the DirectoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="brown" hide-back-button>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Directory</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content style="background:#f2f2f2;">
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+      </ion-refresher>
+      <ion-searchbar [(ngModel)]="myInput" (ionInput)="Search(myInput)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+<div class="customdiv" *ngFor="let dir of directorydata">
+  <ion-card class="directorycard" *ngFor="let directory of dir">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="{{directory.Photo}}">
+      </ion-thumbnail>
+      <h2>{{directory.name}}</h2>
+      <p>Mobile:{{directory.mobile}}</p>
+      <p>Chamber:{{directory.Chamber}}</p>
+      <p>Address:{{directory.Address}}</p>
+    </ion-item>
+  </ion-card>
+</div>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="directorydata.length>0">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

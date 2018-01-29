@@ -1,0 +1,32 @@
+<!--
+  Generated template for the IncumbencyfrontPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="brown">
+      <button ion-button menuToggle style="display:block;">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Incumbency</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content style="background:#f2f2f2;">
+    <ion-list>
+        <button ion-item (click)="president(1,'President')">
+          President
+          </button>
+          <button ion-item (click)="president(3,'Vice President')">
+            Vice President
+          </button>
+          <button ion-item (click)="president(2,'Secretary')">
+              Secretary
+            </button>
+            <button ion-item (click)="president(4,'Joint Secretary')">
+                Joint Secretary
+              </button>
+          </ion-list>
+</ion-content>

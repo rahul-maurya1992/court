@@ -1,0 +1,58 @@
+<!--
+  Generated template for the DirectoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="brown">
+      <button ion-button menuToggle style="display:block;">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Services</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content style="background:#f2f2f2;">
+    <ion-list>
+        <ion-item-divider color="light">Case status</ion-item-divider>
+        <button ion-item (click)="casenumber()">
+          Case Number
+          </button>
+          <button ion-item (click)="firnumber()">
+            <h2>FIR Number</h2>
+          </button>
+          <button ion-item (click)="partyname()">
+            <h2>Party Name</h2>
+          </button>
+          <button ion-item (click)="Advocatename()">
+            <h2>Advocate Name</h2>
+          </button>
+          <button ion-item (click)="casecode()">
+            <h2>Case Code</h2>
+          </button>
+          <button ion-item (click)="act()">
+            <h2>Act</h2>
+          </button>
+          <button ion-item (click)="casetype()">
+            <h2>Case Type</h2>
+          </button>
+
+
+          <ion-item-divider color="light">Court order</ion-item-divider>
+          <button ion-item (click)="casenumber1()">
+            Case Number
+            </button>
+            <button ion-item (click)="courtnumber()">
+              <h2>Court Number</h2>
+            </button>
+            <button ion-item (click)="partyname1()">
+              <h2>Party Name</h2>
+            </button>
+            <button ion-item (click)="orderdate()">
+              <h2>Order Date</h2>
+            </button>
+            <ion-item-divider color="light" (click)="causelist()">Cause List</ion-item-divider>
+        </ion-list>
+</ion-content>
